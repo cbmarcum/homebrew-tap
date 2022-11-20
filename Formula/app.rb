@@ -1,10 +1,10 @@
-# Generated with JReleaser 1.2.0 at 2022-09-18T17:27:37.90377-04:00
+# Generated with JReleaser 1.2.0 at 2022-11-20T08:52:52.031514-05:00
 class App < Formula
   desc "Sample application"
   homepage "https://acme.com/awesome-app"
-  url "https://github.com/cbmarcum/jreleaser-example-app/releases/download/v1.0.1/app-1.0.1.zip"
-  version "1.0.1"
-  sha256 "23d846c6b7c04a7d99530fec72e696b2a856d39c2e1d235183822f01c61fc62f"
+  url "https://github.com/cbmarcum/jreleaser-example-app/releases/download/v1.0.3/app-1.0.3.zip"
+  version "1.0.3"
+  sha256 "1f2c17532e389c3fe9b811027922733a80739426aba4a1f8b85d19275db3fc97"
   license "Apache-2.0"
 
   depends_on "openjdk@8"
@@ -16,6 +16,6 @@ class App < Formula
 
   test do
     output = shell_output("#{bin}/app --version")
-    assert_match "1.0.1", output
+    assert_match "1.0.3", output
   end
 end
